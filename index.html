@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=”en”>
+<html lang=”en-US”>
     <head>
         <link rel="icon" href="book.png" sizes="16x16" type="image/png">
         <meta charset="UTF-8">
@@ -30,12 +30,12 @@
             To do list:
             <ol>
                 <li>Go to Costco</li>
-                <div>
+                
                     <input type="checkbox"> plastic food wrap <br>
                     <input type="checkbox"> crab meat <b>x5</b> <br>
                     <input type="checkbox"> garbage bag <br>
                     <input type="checkbox"> dish soap
-                </div>
+                
                 <li> <strong>Confirm date for 2nd shot</strong></li>
                 <li><span>Do CSE 101 hw</span> + group meeting</li>
             </ol>
@@ -61,7 +61,7 @@
         <div>
             Fact! Ella Fitzgerald is one of <em>the best</em> vocalists on Earth. Here's my proof: 
             <audio controls src="ella.mp3"></audio>
-            <p>Been listening to Ella for years and just recently saw <a href="https://www.youtube.com/watch?v=54UgNa2wKjQ&ab_channel=ComedyCentral">this episode</a> of her in Drunk History. I said it once and I'll say it again: Ella Fitzgerald is &#128079 the &#128079 best &#128079 vocalist had ever lived on Earth.</p>
+            <p>Been listening to Ella for years and just recently saw <a href="https://www.youtube.com/watch?v=54UgNa2wKjQ&ab_channel=ComedyCentral">this episode</a> of her in Drunk History. I said it once and I'll say it again: Ella Fitzgerald is &#128079; the &#128079; best &#128079; vocalist had ever lived on Earth.</p>
         </div>
 
         <hr>
@@ -69,16 +69,16 @@
         <form>
             <fieldset>
                 <h2 id="submit">Write New Journal</h2>
-                <label for="">Journal #</label>
-                <input type="text">
+                <label for="journal-num">Journal #</label>
+                <input type="text" id="journal-num">
                 <br>
-                <label for="">Date</label>
-                <input type="date">
+                <label for="day">Date</label>
+                <input type="date" id="day">
                 <div>
                     This journal is
                     <input type="radio" id="view-settings">
                     <label for="view-settings">Public</label>
-                    <input type="radio" id="view-settings">
+                    <input type="radio">
                     <label for="view-settings">Private</label>
                 </div>
 
