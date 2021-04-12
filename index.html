@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang=”en”>
+    <head>
+        <link rel="icon" href="book.png" sizes="16x16" type="image/png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nguyen's journal</title>
+    </head>
+
+    <body>
+        <header>
+                <nav> This is Nguyen's journal. Here are some quick links:
+                    <ul>
+                        <li><a href="#journal95">Journal #95</a></li>
+                        <li><a href="#journal96">Journal #96</a></li>
+                        <li><a href="#journal97">Journal #97</a></li>
+                        <li><a href="#submit">Write New Journal</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <hr>
+
+        <main></main>
+        <h1>Glad to see you here!</h1>
+        <br>
+        <h2 id="journal95">Journal #95</h2>
+        <h3>Mon, 04.05.2021</h3>
+        <div>
+            To do list:
+            <ol>
+                <li>Go to Costco</li>
+                <div>
+                    <input type="checkbox"> plastic food wrap <br>
+                    <input type="checkbox"> crab meat <b>x5</b> <br>
+                    <input type="checkbox"> garbage bag <br>
+                    <input type="checkbox"> dish soap
+                </div>
+                <li> <strong>Confirm date for 2nd shot</strong></li>
+                <li><span>Do CSE 101 hw</span> + group meeting</li>
+            </ol>
+        </div>
+        <img src="branch.png" alt="branch" width="80">  
+        <br>
+
+        <h2 id="journal96">Journal #96</h2>
+        <h3>Tue, 04.06.2021</h3>
+        <div>
+            Went on a trip to San Francisco & visited <i>Queen Wilhelmina Tulip Garden</i> in Golden Gate Park. It was a nice & sunny day! <br>
+            <video src="garden.MOV" controls width="300"></video>
+            <details>
+                <summary>Fun fact about tulip</summary>
+                <p>Tulips are edible! Apparently it could be used as a replacement for onion.</p>
+              </details>
+        </div>
+        <img src="branch.png" alt="branch" width="80">
+        <br>
+
+        <h2 id="journal97">Journal #97</h2>
+        <h3>Wed, 04.07.2021</h3>
+        <div>
+            Fact! Ella Fitzgerald is one of <em>the best</em> vocalists on Earth. Here's my proof: 
+            <audio controls src="ella.mp3"></audio>
+            <p>Been listening to Ella for years and just recently saw <a href="https://www.youtube.com/watch?v=54UgNa2wKjQ&ab_channel=ComedyCentral">this episode</a> of her in Drunk History. I said it once and I'll say it again: Ella Fitzgerald is &#128079 the &#128079 best &#128079 vocalist had ever lived on Earth.</p>
+        </div>
+
+        <hr>
+
+        <form>
+            <fieldset>
+                <h2 id="submit">Write New Journal</h2>
+                <label for="">Journal #</label>
+                <input type="text">
+                <br>
+                <label for="">Date</label>
+                <input type="date">
+                <div>
+                    This journal is
+                    <input type="radio" id="view-settings">
+                    <label for="view-settings">Public</label>
+                    <input type="radio" id="view-settings">
+                    <label for="view-settings">Private</label>
+                </div>
+
+                <label for="type">Choose the type of your journal:</label>
+                <select id="type">
+                    <option value="">--Please choose an option--</option>
+                    <option value="todo">To-do list</option>
+                    <option value="note">Quick note</option>
+                    <option value="note">Media content</option>
+                </select>
+                <br>
+
+                <div>
+                    <label for="content">Write your journal here:</label>
+                    <br>
+                    <textarea name="content" id="content" cols="80" rows="10"></textarea>
+                </div>
+
+                <label for="happy">If you're happy and you know it check this box</label>
+                <input type="checkbox" id="happy"> 
+                <br>
+                <div>
+                    <label for="sane">Just a small sanity check: Which UC are you studying at?</label>
+                    <input list="ucs" id="sane" name="sane" />
+
+                    <datalist id="ucs">
+                        <option value="UC Berkeley">
+                        <option value="UC Davis">
+                        <option value="UC Irvine">
+                        <option value="UCLA">
+                        <option value="UC Merced">
+                        <option value="UC Riverside">
+                        <option value="UC San Diego">
+                        <option value="UC Santa Barbara">
+                        <option value="UC Santa Cruz">
+                    </datalist>
+                </div>
+                When you're ready, click<button>Submit</button>
+            </fieldset>
+            
+        </form>
+
+        
+        <hr>
+        <footer>
+            <p>
+                Picture credit: <br>
+                <a href="https://www.clipartmax.com/middle/m2H7G6Z5N4b1m2H7_text-divider-png-clip-art-royalty-free-doodle-text-dividers-png/"> ClipArtMax </a>
+            </p>
+            
+        </footer>
+    </body>
+</html>
