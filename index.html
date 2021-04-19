@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <link rel="icon" href="book.png" sizes="16x16" type="image/png">
+        <link rel="stylesheet" href="mystyle.css">
+        <!-- adding the ref line to css file -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nguyen's journal</title>
@@ -9,13 +11,13 @@
     <!-- starting of what's on the screen -->
 
     <body>
-        <header>
+        <header class="sticky">
                 <nav> This is Nguyen's journal. Here are some quick links:
                     <ul>
-                        <li><a href="#journal95">Journal #95</a></li>
-                        <li><a href="#journal96">Journal #96</a></li>
-                        <li><a href="#journal97">Journal #97</a></li>
-                        <li><a href="#submit">Write New Journal</a></li>
+                        <li class="horizontal"><a href="#journal95">Journal #95</a></li>
+                        <li class="horizontal"><a href="#journal96">Journal #96</a></li>
+                        <li class="horizontal"><a href="#journal97">Journal #97</a></li>
+                        <li class="horizontal"><a href="#submit">Write New Journal</a></li>
                     </ul>
                 </nav>
         </header>
@@ -39,7 +41,7 @@
                     </ul>
                 </li>
                 <li> <strong>Confirm date for 2nd shot</strong></li>
-                <li><span>Do CSE 101 hw</span> + group meeting</li>
+                <li><span style="color: darkred;">Do CSE 101 hw</span> + group meeting</li>
             </ol>
         </div>
         <img src="branch.png" alt="branch" width="80">  
@@ -49,7 +51,7 @@
         <h3>Tue, 04.06.2021</h3>
         <div>
             Went on a trip to San Francisco & visited <i>Queen Wilhelmina Tulip Garden</i> in Golden Gate Park. It was a nice & sunny day! <br>
-            <video src="garden.MOV" controls width="300"></video>
+            <video src="garden.MOV" controls width="300" class="pad"></video>
             <details>
                 <summary>Fun fact about tulip</summary>
                 <p>Tulips are edible! Apparently it could be used as a replacement for onion.</p>
@@ -68,14 +70,14 @@
 
         <hr>
 
-        <form>
+        <form> 
             <fieldset>
                 <h2 id="submit">Write New Journal</h2>
                 <label for="journal-num">Journal #</label>
-                <input type="text" id="journal-num">
+                <input type="text" id="journal-num" class="input-border">
                 <br>
                 <label for="day">Date</label>
-                <input type="date" id="day">
+                <input type="date" id="day" class="input-border">
                 <div>
                     This journal is
                     <input type="radio" id="view-settings">
@@ -96,7 +98,7 @@
                 <div>
                     <label for="content">Write your journal here:</label>
                     <br>
-                    <textarea name="content" id="content" cols="80" rows="10"></textarea>
+                    <textarea name="content" id="content" cols="80" rows="10" class="input-border"></textarea>
                 </div>
 
                 <label for="happy">If you're happy and you know it check this box</label>
@@ -104,7 +106,7 @@
                 <br>
                 <div>
                     <label for="sane">Just a small sanity check: Which UC are you studying at?</label>
-                    <input list="ucs" id="sane" name="sane" />
+                    <input list="ucs" id="sane" name="sane" class="input-border" />
 
                     <datalist id="ucs">
                         <option value="UC Berkeley">
