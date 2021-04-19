@@ -22,7 +22,7 @@ h3 {
     text-align: center;
     margin: auto;
 }
-
+/* Pseudo-class selector */
 button:hover {
     color: red;
     font-size: 2ex;
@@ -48,39 +48,45 @@ fieldset {
     background-color:hsl(186, 62%, 77%);
     padding: 0.6cm 1cm 0.6cm 1cm;
 }
-
+/* Selector List */
 img, video {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-ul li {
-    font-family: 'Architects Daughter', cursive;
-}
-
+/* ID selector */
 #fun {
     background-color: lawngreen;
 }
-
+/* General sibling combinator */
 div ~ hr {
     border-color: grey;
 }
-
+/* Adjacent sibling combinator */
 li:first-of-type + li {
     color: red;
 }
-
+/* Attribute selector */
 input[type=text]:focus {
-    background-color: lightgray;
+    background-color: rgba(255, 255, 255, 0.8);
 }
-
-.horizontal {
-    display: inline;
+/* combining 2 selectors */
+#content.input-border:focus {
+    background-color:  rgba(255, 255, 255, 0.8);
+}
+.menu {
+    list-style-type: none;
+    text-align:left;
+}
+/* Descendant combinator */
+.menu li {
+    display: inline-block;
+    padding: 5px;
 }
 
 .input-border {
-    border-radius: 3px;
+    border-radius: 5px;
     border-width: 1px;
 }
 
@@ -98,6 +104,7 @@ input[type=text]:focus {
 }
 
 /* general padding class */
+/* Universal Selector */
 *.pad {
     padding: 20px 0px 20px 0px;
 }
