@@ -23,11 +23,13 @@
     <body>
         <header class="sticky">
             <p>This is Nguyen's journal. Here are some quick links:</p>
-                <nav class="flex-container">
-                    <div><a href="#journal95">Journal #95</a></div>
-                    <div><a href="#journal96">Journal #96</a></div>
-                    <div><a href="#journal97">Journal #97</a></div>
-                    <div><a href="#submit">Write New Journal</a></div>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#journal95">Journal #95</a></li>
+                        <li><a href="#journal96">Journal #96</a></li>
+                        <li><a href="#journal97">Journal #97</a></li>
+                        <li><a href="#submit">Write New Journal</a></li>
+                    </ul>
                 </nav>
         </header>
         <hr>
@@ -35,6 +37,9 @@
         <main></main>
         <h1 class="fsize">Glad to see you here!</h1>
         <br>
+        
+        <!-- 95 -->
+
         <h2 id="journal95">Journal #95</h2>
         <h3>Mon, 04.05.2021</h3>
         <div>
@@ -56,6 +61,8 @@
         <img src="branch.png" alt="branch" width="80">  
         <br>
 
+        <!-- 96 -->
+
         <h2 id="journal96">Journal #96</h2>
         <h3>Tue, 04.06.2021</h3>
         <div>
@@ -68,6 +75,8 @@
         </div>
         <img src="branch.png" alt="branch" width="80">
         <br>
+
+        <!-- 97 -->
 
         <h2 id="journal97">Journal #97</h2>
         <h3>Wed, 04.07.2021</h3>
@@ -129,7 +138,15 @@
                         <option value="UC Santa Cruz">
                     </datalist>
                 </div>
-                When you're ready, click<button>Submit</button>
+                <p>Choose some tag for your journal!</p>
+                <div class="flex-container">
+                    <div>Important</div>
+                    <div>School</div>
+                    <div>Social</div>
+                    <div>Work</div>
+                    <div>Famiily</div>
+                </div>
+                <p>When you're ready, click<button>Submit</button></p>
             </fieldset>
             
         </form>
