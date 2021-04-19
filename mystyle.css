@@ -1,0 +1,58 @@
+
+body {
+    background-color: rgb(192, 236, 240);
+    margin-top: 0.5in;
+    margin-bottom: 0.5in;
+    margin-left: 1in;   
+    margin-right: 1in;
+  }
+
+h1 {
+    color: #187780;
+    font-size: 10em;
+  }
+h2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+button:hover {
+    color: red;
+    font-size: 2ex;
+    background-color: white;
+    border-radius: 5px;
+}
+summary:active {
+    background-color:#187780;
+}
+
+hr {
+    border-width: 0.06em;
+    border-style: dashed;
+    border-color: grey;
+}
+
+.horizontal {
+    display: inline;
+}
+
+.input-border {
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color:hsl(186, 62%, 77%);
+    padding-top: 0.7cm;
+    padding-bottom: 0.3cm;
+    padding-left: 1cm;
+    padding-right: 0.5cm;
+  }
+
+  /* general padding class */
+.pad {
+    padding: 15px 0px 15px 0px;
+}
