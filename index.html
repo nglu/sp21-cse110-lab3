@@ -13,19 +13,21 @@
                     font-size: 5em;
                 }
             }
-        </style>  
+        </style> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script&display=swap" rel="stylesheet">
     </head>
     <!-- starting of what's on the screen -->
 
     <body>
         <header class="sticky">
-                <nav> This is Nguyen's journal. Here are some quick links:
-                    <ul>
-                        <li class="horizontal"><a href="#journal95">Journal #95</a></li>
-                        <li class="horizontal"><a href="#journal96">Journal #96</a></li>
-                        <li class="horizontal"><a href="#journal97">Journal #97</a></li>
-                        <li class="horizontal"><a href="#submit">Write New Journal</a></li>
-                    </ul>
+            <p>This is Nguyen's journal. Here are some quick links:</p>
+                <nav class="flex-container">
+                    <div><a href="#journal95">Journal #95</a></div>
+                    <div><a href="#journal96">Journal #96</a></div>
+                    <div><a href="#journal97">Journal #97</a></div>
+                    <div><a href="#submit">Write New Journal</a></div>
                 </nav>
         </header>
         <hr>
@@ -59,7 +61,7 @@
         <div>
             Went on a trip to San Francisco & visited <i>Queen Wilhelmina Tulip Garden</i> in Golden Gate Park. It was a nice & sunny day! <br>
             <video src="garden.MOV" controls width="300" class="pad"></video>
-            <details>
+            <details id="fun">
                 <summary>Fun fact about tulip</summary>
                 <p>Tulips are edible! Apparently it could be used as a replacement for onion.</p>
               </details>
@@ -135,10 +137,11 @@
         
         <hr>
         <footer>
-            <p>
-                Picture credit:
-                <a href="https://www.clipartmax.com/middle/m2H7G6Z5N4b1m2H7_text-divider-png-clip-art-royalty-free-doodle-text-dividers-png/"> ClipArtMax </a>
-            </p>
+            <div class="grid-container">
+                <div class="item1">&copy Nguyen Luong</div>
+                <div class="item2">2021</div>
+                <div class="item3">Picture credit: <a href="https://www.clipartmax.com/middle/m2H7G6Z5N4b1m2H7_text-divider-png-clip-art-royalty-free-doodle-text-dividers-png/"> ClipArtMax </a></div>  
+            </div>
             
         </footer>
     </body>
