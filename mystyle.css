@@ -1,11 +1,10 @@
-
 body {
     background-color: rgb(192, 236, 240);
     margin-top: 0.5in;
     margin-bottom: 0.5in;
     margin-left: 1in;   
     margin-right: 1in;
-  }
+}
 
 h1 {
     color: #187780;
@@ -42,11 +41,6 @@ hr {
     margin: 30px 0px 30px 0px
 }
 
-footer {
-    text-align: right;
-}
-
-
 fieldset {
     margin: 30px 0px 30px 0px;
     border-radius: 0.8cm;
@@ -55,11 +49,32 @@ fieldset {
     padding: 0.6cm 1cm 0.6cm 1cm;
 }
 
-img {
+img, video {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+ul li {
+    font-family: 'Architects Daughter', cursive;
+}
+
+#fun {
+    background-color: lawngreen;
+}
+
+div ~ hr {
+    border-color: grey;
+}
+
+li:first-of-type + li {
+    color: red;
+}
+
+input[type=text]:focus {
+    background-color: lightgray;
+}
+
 .horizontal {
     display: inline;
 }
@@ -75,14 +90,49 @@ img {
     position: sticky;
     top: 0;
     background-color:hsl(186, 62%, 77%);
-    padding-top: 0.7cm;
+    padding-top: 0.2cm;
     padding-bottom: 0.3cm;
     padding-left: 1cm;
     padding-right: 1cm;
     border-radius: 0.8cm;
-  }
+}
 
-  /* general padding class */
-.pad {
-    padding: 15px 0px 15px 0px;
+/* general padding class */
+*.pad {
+    padding: 20px 0px 20px 0px;
+}
+
+/* define 'flexbox' layout */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+.flex-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: auto;
+    padding: 7px;
+    border-radius: 0.8cm;
+    font-size: 15px;
+}
+
+/* define 'grid' layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+  }
+  
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0.8cm;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.itemgrid {
+    place-self: center stretch;
 }
