@@ -11,9 +11,17 @@ h1 {
     color: #187780;
     font-size: 10em;
     margin: auto
-  }
+}
+
 h2 {
     font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    margin: auto;
+}
+h3 {
+    text-align: center;
+    margin: auto;
 }
 
 button:hover {
@@ -34,18 +42,24 @@ hr {
     margin: 30px 0px 30px 0px
 }
 
-form {
-    
+footer {
+    text-align: right;
 }
+
 
 fieldset {
     margin: 30px 0px 30px 0px;
     border-radius: 0.8cm;
     border: none;
     background-color:hsl(186, 62%, 77%);
-    padding: 0cm 1cm 0.6cm 1cm;
+    padding: 0.6cm 1cm 0.6cm 1cm;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .horizontal {
     display: inline;
 }
